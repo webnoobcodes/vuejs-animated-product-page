@@ -1,4 +1,6 @@
-# vuejs-animated-product-page
+# vuejs-animated-product page
+
+- [Tutorial on Youtube](https://youtu.be/shmZ9BLRD8o)
 
 ## Project setup
 ```
@@ -15,5 +17,16 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+## License
+
+[MIT](LICENSE)
