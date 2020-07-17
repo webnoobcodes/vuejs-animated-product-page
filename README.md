@@ -1,4 +1,4 @@
-# vuejs-animated-product page
+# vuejs-animated-product-page
 
 - [Tutorial on Youtube](https://youtu.be/shmZ9BLRD8o)
 
