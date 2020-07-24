@@ -1,6 +1,7 @@
 # vuejs-animated-product-page
 
-- [Tutorial on Youtube](https://youtu.be/shmZ9BLRD8o)
+- [Tutorial on Youtube - Part 1](https://youtu.be/shmZ9BLRD8o)
+- [Tutorial on Youtube - Part 2](https://youtu.be/x__aHTNyu6E)
 
 ## Project setup
 ```

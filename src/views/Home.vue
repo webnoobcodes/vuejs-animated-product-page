@@ -1,19 +1,20 @@
 <template>
   <div class="home">
     <ProductGallery :images="product.images" />
+    <!--
+    Vue Component Solution:
     <Appear :delay="500" :translate="['-100px', 0]">
       <h1>{{ product.title }}</h1>
     </Appear>
-    <Appear :delay="700" :translate="['100px', 0]">
-      <p>{{ product.description }}</p>
-    </Appear>
+
+    Vue Directive Solution:
+    <h1 v-appear:left="{delay: 500}">{{ product.title }}</h1>
+    -->
+    <h1 v-appear:left="{delay: 500}">{{ product.title }}</h1>
+    <p v-appear:right="{delay: 700}">{{ product.description }}</p>
     <div class="order">
-      <Appear :delay="900" :translate="[0, '100px']">
-        <div class="product-price">{{ product.price }} <sup>USD</sup></div>
-      </Appear>
-      <Appear :duration="800" :delay="1300">
-        <button>Eat Me</button>
-      </Appear>
+      <div v-appear:bottom="{delay: 900}" class="product-price">{{ product.price }} <sup>USD</sup></div>
+      <button v-appear="{duration: 800, delay: 1300}">Eat Me</button>
     </div>    
   </div>
 </template>

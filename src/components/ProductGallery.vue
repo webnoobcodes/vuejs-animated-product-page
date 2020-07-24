@@ -2,9 +2,14 @@
   <div class="product-gallery">
     <div class="gallery">
       <div class="gallery-item-wrapper" v-for="(item, index) in images" :key="'img'+index" @click="activeImg = index">
+        <!--
         <Appear :delay="100 * (index + 1)" :translate="['-100px', 0]">
           <div class="gallery-item" :style="{'background-image': 'url('+ require('../assets/'+ item)+')'}"></div>
         </Appear>
+        -->
+        <div v-appear:left="{delay: 100 * (index + 1)}" 
+            class="gallery-item" 
+            :style="{'background-image': 'url('+ require('../assets/'+ item)+')'}"></div>
       </div>      
     </div>
     <Appear :translate="['100px', 0]">
